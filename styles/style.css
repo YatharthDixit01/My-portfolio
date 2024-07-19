@@ -1,0 +1,428 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+}
+body {
+  background: #080808;
+  color: #fff;
+}
+
+#header {
+  width: 100%;
+  height: 100vh;
+  background-image: url("../images/yatharth_img.JPG");
+  background-repeat: no-repeat;
+  background-position: right 10% bottom 0%;
+  background-attachment: fixed;
+  background-size: contain;
+  position: relative;
+}
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+}
+
+.nameLogo {
+  font-size: 2.2rem;
+}
+
+.container {
+  padding: 10px 7%;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: 0.5s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+.headerText {
+  margin-top: 17%;
+  font-size: 25px;
+}
+
+.headerText h1 {
+  font-size: 60px;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.headerText h1 span {
+  color: #ff004f;
+}
+
+/* -------------About section--------------- */
+
+#about {
+  padding: 80px 0;
+  color: #ababab;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.about-col1 {
+  flex-basis: 35%;
+}
+
+.about-col1 img {
+  width: 85%;
+  border-radius: 15px;
+  margin-top: 60px;
+}
+.about-col1 img:hover {
+  box-shadow: 3px 3px 15px white, -3px -3px 15px white;
+}
+
+.about-col2 {
+  flex-basis: 60%;
+}
+
+.subTitle {
+  font-size: 50px;
+  font-weight: 600;
+  color: white;
+}
+.subTitle:hover {
+  text-shadow: 2px 2px 10px white;
+}
+
+.tabTitles {
+  display: flex;
+  margin: 20px 0 40px;
+}
+
+.tabLinks {
+  margin-right: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  position: relative;
+}
+
+.tabLinks::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #ff004f;
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  transition: 0.5s;
+}
+
+.tabLinks.activeLink::after {
+  width: 50%;
+}
+
+.tabContents ul li {
+  list-style: none;
+  margin: 10px 0;
+  background: #262626;
+  border-radius: 5px;
+  padding: 5px 5px;
+}
+
+.tabContents ul li span {
+  color: #ff004f;
+  font-size: 14px;
+}
+
+.tabContents {
+  display: none;
+}
+
+.tabContents.activeTab {
+  display: block;
+}
+
+.aboutMePara li {
+  background: #262626;
+  border-radius: 5px;
+  padding: 5px 5px;
+  margin: 5px 5px;
+}
+
+/* ----------------projects------------------- */
+#projects {
+  padding: 30px 0;
+}
+
+.projectsList {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 40px;
+  margin-top: 50px;
+}
+
+.work {
+  height: 45vh;
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+}
+
+.work img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  display: block;
+  transition: transform 0.5s;
+}
+
+.projectInfo {
+  width: 100%;
+  height: 0%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), #ff004f);
+  border-radius: 10px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 40px;
+  text-align: center;
+  font-size: 14px;
+  transition: height 0.5s;
+}
+
+.projectInfo h2 {
+  font-size: 35px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.projectInfo a {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #ff004f;
+  text-decoration: none;
+  font-size: 18px;
+  line-height: 60px;
+  background: white;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.work:hover img {
+  transform: scale(1.1);
+}
+
+.work:hover .projectInfo {
+  height: 100%;
+}
+
+.work h2 {
+  font-weight: 600;
+}
+/* ----------------------Contact---------------- */
+
+.contactLeft {
+  flex-basis: 35%;
+}
+.contactRight {
+  flex-basis: 60%;
+}
+
+.contactLeft p {
+  margin-top: 30px;
+}
+
+.contactLeft p i {
+  color: #ff004f;
+  margin-right: 15px;
+  font-size: 25px;
+}
+
+.socialIcons {
+  margin-top: 30px;
+}
+
+.socialIcons a {
+  text-decoration: none;
+  font-size: 30px;
+  margin-right: 15px;
+  color: #ababab;
+  display: inline-block;
+  transition: transform 0.5s;
+}
+
+.socialIcons a:hover {
+  color: #ff004f;
+  transform: translateY(-5px);
+}
+
+.btn {
+  display: block;
+  margin: 50px auto;
+  width: fit-content;
+  border: 1px solid #ff004f;
+  padding: 14px 50px;
+  border-radius: 6px;
+  text-decoration: none;
+  color: white;
+  transition: background 0.5s;
+  background: #ff004f;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #080808;
+}
+
+.contactRight form {
+  width: 100%;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  border: 0;
+  outline: none;
+  background: #262626;
+  margin: 15px 0;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  border-radius: 6px;
+}
+
+.btn2 {
+  padding: 14px 60px;
+  font-size: 18px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  width: 100%;
+  text-align: center;
+  padding: 25px 0;
+  background: #262626;
+  font-weight: 300;
+  margin-top: 20px;
+}
+
+/* ----------------CSS for small screens--------------- */
+nav .fa-solid {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  #header {
+    background-image: url(../images/yatharth_img_Phone.JPG);
+    height: 100vh;
+  }
+
+  .headerText {
+    margin-top: 100%;
+    font-size: 16px;
+  }
+  .headerText h1 {
+    font-size: 30px;
+  }
+  nav .fa-solid {
+    display: block;
+    font-size: 25px;
+  }
+  nav ul {
+    background: #ff004f;
+    position: fixed;
+    top: 0;
+    right: -200px;
+    width: 200px;
+    height: 100vh;
+    padding-top: 50px;
+    z-index: 2;
+    transition: right 0.5s;
+  }
+  nav ul li {
+    display: block;
+    margin: 25px;
+  }
+  nav ul .fa-solid {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    cursor: pointer;
+  }
+
+  .subTitle {
+    font-size: 35px;
+  }
+
+  .about-col1,
+  .about-col2 {
+    flex-basis: 100%;
+  }
+
+  .about-col1 {
+    margin-bottom: 30px;
+  }
+  .about-col2 {
+    font-size: 14px;
+  }
+  .tabLinks {
+    font-size: 16px;
+    margin-right: 25px;
+  }
+  .contactLeft,
+  .contactRight {
+    flex-basis: 100%;
+  }
+  .copyright {
+    font-size: 14px;
+  }
+}
+
+#msg {
+  color: #61b752;
+  margin-top: -40px;
+  display: block;
+}

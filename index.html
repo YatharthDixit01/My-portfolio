@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Yatharth's Portfolio</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div id="header">
+      <div id="particles-js"></div>
+      <div class="container">
+        <nav>
+          <div class="nameLogo">
+            <h2 style="color: red">P<span style="color: white">F</span></h2>
+          </div>
+          <ul id="sideMenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+          </ul>
+
+          <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+        </nav>
+        <div class="headerText">
+          <h1>Hi, I'm <br /><span>Yatharth Dixit</span></h1>
+          <p>Web Developer</p>
+        </div>
+      </div>
+    </div>
+
+    <!-----------------About Section----------------->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col1">
+            <img src="./images/user.png" />
+          </div>
+          <div class="about-col2">
+            <h2 class="subTitle">About Me</h2>
+            <br />
+            <p style="font-size: 1.1rem" class="aboutMePara">
+              A passionate and dedicated new web developer with a keen interest
+              in creating dynamic and user-friendly websites. I have gained a
+              solid foundation in front-end technologies such as HTML, CSS, and
+              JavaScript, and I'm continuously expanding my skills by exploring
+              various frameworks and libraries like React. <br />
+              <br />
+              As I continue to grow and evolve in this field, I am excited about
+              the opportunities to collaborate with like-minded professionals
+              and take on challenging projects.
+            </p>
+
+            <div class="tabTitles">
+              <p class="tabLinks activeLink" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tabLinks" onclick="opentab('experience')">Experience</p>
+              <p class="tabLinks" onclick="opentab('education')">Education</p>
+            </div>
+            <!-- Tab For skills -->
+            <div class="tabContents activeTab" id="skills">
+              <ul>
+                <li><span>Languages</span><br />Java(core), C(Basics)</li>
+                <li>
+                  <span>Web Development</span><br />
+                  HTML, CSS, JavaScript, React.js
+                </li>
+                <li>
+                  <span>Tools</span><br />GitHub, VS Code, Eclipse, MS Excel, MS
+                  Word, PowerPoint
+                </li>
+                <li>
+                  <span>Domain of Interest</span><br />Full Stack Development
+                </li>
+              </ul>
+            </div>
+            <!-- Tab for Experience -->
+            <div class="tabContents" id="experience">
+              <ul>
+                <li>
+                  <span>2023 - Current</span><br />Graduate Engineer Trainee at
+                  TEOCO Software Pvt. Ltd. <br /><br />Developed interactive
+                  company's website, utilizing JavaScript, SCSS, CSS, and HTML
+                  to create a user-friendly interface and meet detailed company
+                  specifications. And regular Maintenance of that website.
+                </li>
+              </ul>
+            </div>
+            <!-- Tab for Educaiton -->
+            <div class="tabContents" id="education">
+              <ul>
+                <li>
+                  <span>2024-Current</span><br />MCA from Lovely Professional
+                  University
+                </li>
+                <li>
+                  <span>2024-Current</span><br />Full Stack Development in Java
+                  from DUCAT
+                </li>
+                <li><span>2022</span><br />BCA from MJPRU Bareilly</li>
+                <li>
+                  <span>2019</span><br />Intermediate from Kendriya Vidyalaya
+                  N.E.R
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-------------------- Projects ------------------------->
+
+    <div id="projects">
+      <div class="container">
+        <h2 class="subTitle">My Projects</h2>
+        <div class="projectsList">
+          <div class="work">
+            <img src="./images/work-1.png" />
+            <div class="projectInfo">
+              <h2>Tourism</h2>
+              <p>
+                The site features stunning visual elements, and responsive
+                design to cater to travelers seeking information and
+                inspiration. It showcases my ability to blend aesthetic appeal
+                with functionality in web development.
+              </p>
+              <a
+                href="https://yatharthdixit01.github.io/Tourism/"
+                target="_blank"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-2.png" />
+            <div class="projectInfo">
+              <h2>Project 2</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi minima dolorem amet vero natus soluta quod quis nobis,
+                blanditiis!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-3.png" />
+            <div class="projectInfo">
+              <h2>Project 3</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi minima dolorem amet vero natus soluta quod quis nobis,
+                blanditiis!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-1.png" />
+            <div class="projectInfo">
+              <h2>Project 4</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi minima dolorem amet vero natus soluta quod quis nobis,
+                blanditiis!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-2.png" />
+            <div class="projectInfo">
+              <h2>Project 4</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi minima dolorem amet vero natus soluta quod quis nobis,
+                blanditiis!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="./images/work-3.png" />
+            <div class="projectInfo">
+              <h2>Project 6</h2>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi minima dolorem amet vero natus soluta quod quis nobis,
+                blanditiis!
+              </p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <!-- <a href="#" class="btn">See more</a> -->
+      </div>
+    </div>
+    <!-- ------------------------------contact------------------------------ -->
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contactLeft">
+            <h2 class="subTitle">Contact Me</h2>
+            <p>
+              <i class="fa-solid fa-envelope"></i> yatharthdixit2015@gmail.com
+            </p>
+            <p><i class="fa-solid fa-mobile-screen-button"></i> 8307519442</p>
+            <div class="socialIcons">
+              <a
+                href="https://www.linkedin.com/in/yatharth-dixit-a404071b2/"
+                target="_blank"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+              <a href="https://github.com/YatharthDixit01" target="_blank"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/yatharth_s_dixit/"
+                target="_blank"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://x.com/Yatharth_dxt" target="_blank"
+                ><i class="fa-brands fa-square-twitter"></i
+              ></a>
+            </div>
+            <a
+              href="./Documents/Yatharth Resume.pdf"
+              target="_blank"
+              class="btn"
+              >Download CV</a
+            >
+          </div>
+          <div class="contactRight">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your Name" required />
+              <input
+                type="email"
+                name="Email"
+                placeholder="Your Email"
+                required
+              />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Your Message"
+              ></textarea>
+              <button type="submit" class="btn btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>
+          Copyright &copy; Yatharth. Made with
+          <span style="color: red; font-size: 20px"> &hearts;</span>
+        </p>
+      </div>
+    </div>
+    <!-- --------------------------------JavaScript---------------------------------- -->
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+      particlesJS("particles-js", {
+        particles: {
+          number: { value: 25 },
+          size: { value: 1 },
+          color: { value: "#ffffff" },
+          line_linked: {
+            enable: true,
+            distance: 100,
+            color: "#ffffff",
+            opacity: 0.5,
+            width: 1.2,
+          },
+          move: {
+            enable: true,
+            speed: 2,
+          },
+        },
+      });
+    </script>
+  </body>
+</html>
