@@ -74,6 +74,10 @@ nav ul li a:hover::after {
   width: 100%;
 }
 
+.fa-solid{
+  z-index: 1;
+}
+
 .headerText {
   margin-top: 17%;
   font-size: 25px;
